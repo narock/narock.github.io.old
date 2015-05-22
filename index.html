@@ -1,150 +1,650 @@
----
-layout: home
----
 
 <!DOCTYPE html>
-<!--
-Template Name: Momentous
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
-<html>
-  <head>
-    <title>Tom Narock's Home Page</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Tom Narock is an Assistant Professor of Information Technology at Marymount University in Arlington, VA, USA">
-    <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "WebSite",
-      "name": "Tom Narock's Home Page",
-      "about": {
-        "@type": "Person",
-        "url": "http://narock.github.io/",
-        "honorificPrefix": "Dr.",
-        "name": "Tom Narock",
-        "honorificSuffix": "PhD",
-        "affiliation": {
-          "@type": "Organization",
-          "legalName": "Marymount University",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "4040 Fairfax Drive",
-            "addressLocality": "Arlington",
-            "addressRegion": "VA",
-            "postalCode": "22203"
-          },
-          "department": {
-            "@type": "Organization",
-            "legalName": "Department of Information Technology"
-          }
+<html lang="en">
+    <head>
+        <title>Tom Narock's Home Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Tom Narock is an Assistant Professor of Information Technology at Marymount University in Arlington, VA, USA. His research is in the area of Data Science and the Semantic Web with an emphasis on Geoscience applications. Tom teaches in the areas of Data Science and web application development. He also oversees students in independent study research projects.">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta name="keywords" content="Tom Narock, Marymount University, Semantic Technologies, Semantic e-Science">
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+
+        <!--Javascript files-->
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript" src="js/masonry.min.js"></script>
+        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-63291505-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "WebSite",
+            "name": "Tom Narock's Home Page",
+            "about": {
+                "@type": "Person",
+                "url": "http://narock.github.io/",
+                "honorificPrefix": "Dr.",
+                "name": "Tom Narock",
+                "honorificSuffix": "PhD",
+                "affiliation": {
+                    "@type": "Organization",
+                    "legalName": "Marymount University",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4040 Fairfax Drive",
+                        "addressLocality": "Arlington",
+                        "addressRegion": "VA",
+                        "postalCode": "22203"
+                    },
+                    "department": {
+                        "@type": "Organization",
+                        "legalName": "Department of Information Technology"
+                    }
+                }
+            },
+            "author": {
+                "@type": "Person",
+                "url": "http://narock.github.io/",
+                "honorificPrefix": "Dr.",
+                "name": "Tom Narock",
+                "honorificSuffix": "PhD",
+                "affiliation": {
+                    "@type": "Organization",
+                    "legalName": "Marymount University",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4040 Fairfax Drive",
+                        "addressLocality": "Arlington",
+                        "addressRegion": "VA",
+                        "postalCode": "22203"
+                    },
+                    "department": {
+                        "@type": "Organization",
+                        "legalName": "Department of Information Technology"
+                    }
+                }
+            }
         }
-      },
-      "author": {
-        "@type": "Person",
-        "url": "http://narock.github.io/",
-        "honorificPrefix": "Dr.",
-        "name": "Tom Narock",
-        "honorificSuffix": "PhD",
-        "affiliation": {
-          "@type": "Organization",
-          "legalName": "Marymount University",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "4040 Fairfax Drive",
-            "addressLocality": "Arlington",
-            "addressRegion": "VA",
-            "postalCode": "22203"
-          },
-          "department": {
-            "@type": "Organization",
-            "legalName": "Department of Information Technology"
-          }
-        }
-      }
-    }
-    </script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        </script>
 
-  ga('create', 'UA-63291505-1', 'auto');
-  ga('send', 'pageview');
+    </head>
+    <body>
 
-    </script>
-  </head>
-  <body id="top">
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu"><i class="icon-reorder"></i></a>
 
-    <!-- My Name Header -->
-    <div class="wrapper row1">
-      <header id="header" class="clear"> 
-        <div id="logo" class="fl_left">
-          <h1><a href="index.html">Tom Narock</a></h1>
+            <div id="sidebar">
+                <div id="main-nav">
+                    <div id="nav-container">
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Tom Narock</h2>
+                                <h3>Marymount University</h3>
+                            </div>
+                            
+                        </div>
+                        <ul id="navigation">
+                            <li>
+                              <a href="#biography">
+                                <div class="icon"><img src="img/about.jpg" height="45" width="45"></div>
+                                <div class="text">About Me</div>
+                              </a>
+                            </li>  
+                            
+                            <li>
+                              <a href="#research">
+                                <div class="icon"><img src="img/research.jpg" height="45" width="45"></div>
+                                <div class="text">Research</div>
+                              </a>
+                            </li> 
+                            
+                            <li>
+                              <a href="#publications">
+                                <div class="icon"><img src="img/publication.jpg" height="45" width="45"></div>
+                                <div class="text">Publications</div>
+                              </a>
+                            </li> 
+
+                            <li>
+                              <a href="#teaching">
+                                <div class="icon"><img src="img/teaching.jpg" height="45" width="45"></div>
+                                <div class="text">Teaching</div>
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#contact">
+                                  <div class="icon"><img src="img/contact.jpg" height="45" width="45"></div>
+                                  <div class="text">Contact Me</div>
+                              </a>
+                            </li>
+
+                        </ul>
+                    </div>        
+                </div>
+                
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/pub/tom-narock/94/66b/70a">
+                                <img src="img/linkedin.jpeg" height="30" width="30">
+                            </a>
+                        </li>
+                        <li><a href="http://orcid.org/0000-0002-9785-4496">                            
+                            <img src="img/orcid.png" height="30" width="30">
+                            </a>
+                        </li>
+                        <li><a href="http://www.researchgate.net/profile/Tom_Narock">
+                                <img src="img/research_gate.jpeg" height="30" width="30">
+                            </a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div id="main">
+            
+                <div id="biography" class="page home" data-pos="home">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <div class="row">
+                                    <div class="col-sm-2 visible-sm"></div>
+                                    <div class="col-sm-6 col-md-1">
+                                        
+                                        
+                                    </div>
+                                    <div class="clearfix visible-sm visible-xs"></div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <h3 class="title">Bio</h3>
+                                        <p>Tom Narock is an Assistant Professor of Information Technology at Marymount University in Arlington, VA. His research is in the area of Data Science and the Semantic Web with an emphasis on Geoscience applications. Tom teaches in the areas of Data Science and web application development and also oversees students in independent study research projects.</p>
+                                    </div>  
+                                    
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-5 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Academic Positions</h3>
+                                        </div>
+                                        <ul class="ul-dates">
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Present</span>
+                                                    <span>2014</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Assistant Professor</h4>
+                                                    <p><em>Marymount University</em></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>2013</span>
+                                                    <span>2013</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Associate Research Scientist</h4>
+                                                    <p><em>University of Maryland, Baltimore County</em></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>2012</span>
+                                                    <span>2001</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Data Analyst</h4>
+                                                    <p><em>NASA/Goddard Space Flight Center</em></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="title text-center">
+                                            <h3>Education & Training</h3>
+                                        </div>
+                                        <ul class="ul-card">
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">Ph.D.</span>
+                                                    <span class="year">2012</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Information Systems</p>
+                                                    <p class="where">University of Maryland, Baltimore County</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">M.S.</span><span class="year">2005</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Applied Physics</p>
+                                                    <p class="where">Johns Hopkins University</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">B.S.</span><span class="year">2000</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Astronomy</p>
+                                                    <p class="where">University of Maryland, College Park</p>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+
+                                    </div>    
+                                </div>    
+                            </div>
+                                
+                        </div>
+
+                        <div class="section color-2">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Honors, Awards and Grants</h3>
+                                        </div>
+                                        <ul class="timeline">
+                                                    
+                                            <li class="open">
+                                                <div class="date">2015-2016</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">ResearchBit: Alfred P. Sloan Foundation Grant</div>
+                                                    <div class="text row">
+                                                        <div class="col-md-2"></div>
+                                                        <div class="col-md-10">
+                                                            Research networking systems use scholarly information to foster new forms of social capital thus increasing the possibility of scientific innovation and collaboration. These systems compile expertise profiles for faculty, investigators, and scholars, from publicly available research data (e.g., grants and publications), and connect them to institution-level/enterprise systems and national research networks. We believe the potential of research networking systems can be increased with a focus on serendipitous interactions. ResearchBit, is a system that promotes serendipitous interactions by tracking and recording, in real-time, a researcher’s interactions at conferences and meeting and suggesting suitable connections by combining her real-time data with existing researcher profiles. 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="date">2014-2016</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">NSF EarthCube Building Block Grant</div>
+                                                    <div class="text row">
+                                                        <div class="col-md-2">
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            The National Science Foundation's EarthCube program has set out to create integrated data infrastructures across the Geosciences. On of its key challenges is to enable and simplify scientific data publishing, discovery, access, reuse, and integration. GeoLink is cyberinfrastructure within the EarthCube initiative to address these challenges by 1) digital publication of geoscience data and knowledge as "Linked Open Data", combined with 2) semantic integration by way of describing data using ontology design patterns and vocabularies shared among federated repositories, and 3) establishing Linked Data and ontology design patterns as an underlying cyberinfrastructure. GeoLink will greatly enhance the capabilities for scientists to discover and interpret relevant geoscience data and knowledge. 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="date">2013-2014</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">NSF EarthCube EAGER Grant</div>
+                                                    <div class="text row">
+                                                        <div class="col-md-2">
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            A one year proof of concept project to demonstrate the utility of Semantic Technologies to achieve the goals of the The National Science Foundation's EarthCube program.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+
+                <div id="research" class="page">
+                    <div class="pageheader">
+
+                        <div class="headercontent">
+
+                            <div class="section-container">
+                                <h2 class="title">Research Summary</h2>
+                            
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p>Dr. Narock's research interests focus on intelligent information systems and Big Data problems. With a background in the Geosciences, he has a particular interest in the intersection of science and technology and enjoys working on projects in this context. Dr. Narock has worked on a number of projects enhancing information retrieval and integration within the Earth and space sciences.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="subtitle text-center">
+                                            <h3>Research Interests</h3>
+                                        </div>
+                                        <ul class="ul-boxed list-unstyled">
+                                            <li>Semantic Technologies</li>
+                                            <li>Multi-Agent Systems</li>
+                                            <li>Big Data and Data Science</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagecontents">
+                        
+                        <div class="section color-2">
+                            <div class="section-container">
+                                <div class="title text-center">
+                                    <h3>Research Projects</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="ul-withdetails">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/geolink_team.jpg"  class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon icon-search"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>GeoLink</h3>
+                                                            <p></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                    <p>Dr. Narock and Marymount University are part of a consortium of collaborators funded with approx. $1.9M by the National Science Foundation through the EarthCube program. This research consortium consists of the Lamont-Doherty Earth Observatory at Columbia University, the Woods Hole Oceanographic Institution, the National Center for Ecological Analysis and Synthesis, the Department of Geography at the University of California, Santa Barbara, the DaSe Lab at Wright State University, Marymount University, the Consortium for Ocean Leadership, and the University of Maryland, Baltimore County.</p>
+
+                                                    <p>The National Science Foundation's EarthCube program has set out to create integrated data infrastructures across the Geosciences. On of its key challenges is to enable and simplify scientific data publishing, discovery, access, reuse, and integration. Existing data repositories and networks must be linked, while retaining their independent missions and services to existing disciplinary communities. Cultural, conceptual, and infrastructural heterogeneities must be respected in order to maintain different perspectives, topics, granularities, and differing priorities and thus foster inclusivity in the EarthCube endeavor. At the same time, however, the diversity and heterogeneity of geoscience data presents a significant barrier to its discovery and reuse.</p>
+
+                                                    <p>Dr. Narock and the consortium are creating GeoLink - cyberinfrastructure within the EarthCube initiative to address these challenges by 1) digital publication of geoscience data and knowledge as "Linked Open Data", combined with 2) semantic integration by way of describing data using ontology design patterns and vocabularies shared among federated repositories, and 3) establishing Linked Data and ontology design patterns as an underlying cyberinfrastructure. GeoLink will greatly enhance the capabilities for scientists to discover and interpret relevant geoscience data and knowledge. It will lower barriers to cross-repository data discovery and access, while respecting and preserving repository autonomy and heterogeneity. The cyberinfrastructure underlying the approach is extendable, sustainable, and affordable - leveraging state of the art developments in Linked Open Data and formal semantics, grounded through shared ontology design patterns. The value of the approach will finally be showcased by developing a Web portal that enables searching and browsing of integrated content from multiple repositories, serving a diverse collection of geoscience communities. The project was showcased in the <a href="http://news.sciencemag.org/scientific-community/2014/12/geoscientists-aim-magnify-specialized-web-searching">January 2015 edition</a> of Science magazine.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/esip.png"  class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon icon-search"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>ResearchBit</h3>
+                                                            <p></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                    <p>Research networking systems use scholarly information to foster new forms of social capital thus increasing the possibility of scientific innovation and collaboration. Recently, there has been a rapid rise in research networking systems such as VIVO, Harvard Profiles, and SciVal. These systems compile expertise profiles for faculty, investigators, and scholars, from publicly available research data (e.g., grants and publications), and connect them to institution-level/enterprise systems and national research networks. By connecting groups of people or organizations that are not obviously linked to each other, and identifying individuals who are best positioned to collaborate effectively, the underlying hypothesis of a research networking system is improved scientific efficiency, productivity, and impact.</p>
+
+                                                    <p>While useful aggregators of publically available information, we believe the potential of research networking systems can be increased with a focus on serendipitous interactions. ResearchBit, is a system that promotes serendipitous interactions by tracking and recording, in real-time, a researcher’s interactions at conferences and meeting and suggesting suitable connections by combining her real-time data with researcher profiles. ResearchBit, will actively track the sessions, panels, and working groups that a researcher is attending at a professional society meeting. This will be achieved by embedding ultrahigh-frequency (UHF) RFID tags to conference badges of the attendees. Using a recommendation system, it will relate the current interests of the researcher, as obtained through RFID data, with past historical data of co-attendees as obtained through profiles on research networking systems and past meeting attendance, thus inferring connections that can be made in real-time. ResearchBit, is an entirely opt-in mechanism in which researchers who weigh privacy over recommendations are not tracked. ResearchBit will complement current research networking systems, but also also take the next step towards real-time recommendations and serendipitous interactions.</p>
+                                                </div>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div id="publications" class="page">
+                    <div class="page-container">
+                        <div class="pageheader">
+                            <div class="headercontent">
+                                <div class="section-container">
+                                    
+                                    <h2 class="title">Publications</h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                <a href="publications.html">Journal Publications and Books</a><br/><br/>
+
+                                                <a href="https://scholar.google.com/citations?user=ZnoM_joAAAAJ">
+                                                    Google Scholar Page</a><br/><br/>
+
+                                                <a href="popular_press.html">Popular Press Articles</a><br/><br/>
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="teaching" class="page">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <h2 class="title">Teaching</h2>
+                                
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        
+                                    <div class="section-container">
+                                        <div class="row">
+                                            <div class="title text-center">
+                                                <h3>Currrent Teaching</h3>
+                                            </div>
+                                            <ul class="ul-dates">
+                                             <li>
+                                              <div class="dates">
+                                                <span>Summer</span>
+                                                <span>2015</span>
+                                              </div>
+                                              <div class="content">
+                                                <h4>IT-489 Capstone Project</h4>
+                                                <p></p>
+                                              </div>
+                                             </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagecontents">
+                        <div class="section color-2">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="title text-center">
+                                        <h3>Teaching History</h3>
+                                    </div>
+                                    <ul class="ul-dates-gray">
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2015</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-489 Capstone Project</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2015</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-360 Special Topics in IT (Mobile Apps)</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2015</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-125 Web Development</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Fall</span>
+                                                <span>2014</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-489 Capstone Project</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Fall</span>
+                                                <span>2014</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-225 Advanced Web Development</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Fall</span>
+                                                <span>2014</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-125 Web Development</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2014</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-225 Advanced Web Development</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2014</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-125-A Web Development</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2014</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>IT-125-B Web Development</h4>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="contact" class="page stellar">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <h2 class="title">Contact Me</h2>
+                            
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <strong><i class="icon-building icon-2x"></i>&nbsp;&nbsp;</strong>
+                                                <span>Office: 4040 Fairfax, Room 423</span>
+                                            </li><br/>
+                                            <li>
+                                                <strong><i class="icon-time icon-2x"></i>&nbsp;&nbsp;</strong>
+                                                <span>Office Hours: Mon./Thurs 11am - 12, 1:30 - 2:30 pm</span>
+                                            </li><br/>
+                                            <li>
+                                                <strong><i class="icon-phone icon-2x"></i>&nbsp;&nbsp;</strong>
+                                                <span>(703) 284 5935</span>
+                                            </li><br/>
+                                            <li>
+                                                <strong><i class="icon-envelope icon-2x"></i>&nbsp;&nbsp;</strong>
+                                                <span>tnarock@marymount.edu</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div><i class="fa fa-building-o"></i>
+                
+                <div id="overlay"></div>
+            
+            </div>
         </div>
-      </header>
-    </div>
 
-    <!-- Classroom Image and Link Images -->
-    <div class="wrapper row2">
-      <div id="hp_intro" class="clear"> 
-      
-        <!-- Classroom Image -->
-        <div class="two_quarter first">
-          <img src="images/college-classroom.jpg" alt="">
-        </div>
-
-        <div class="one_quarter">
-
-          <!-- Teaching -->
-          <article class="push50">
-            <a href="pages/teaching.html">
-              <div class="circle push15">
-                <span class="icon-user"></span>
-              </div>
-              <h6 class="push10" style="color:#FFFFFF">Teaching</h6>
-            </a>
-          </article>
-
-          <!-- Research -->
-          <article>
-            <a href="pages/research.html">
-              <div class="circle push15">
-                <span class="icon-lightbulb"></span>
-              </div>
-              <h6 class="push10" style="color:#FFFFFF">Research</h6>
-            </a>
-          </article>
-        
-        </div>
-
-        <div class="one_quarter">
-
-          <!-- Contact -->
-          <article class="push50">
-            <a href="pages/contact.html">
-              <div class="circle push15">
-                <span class="icon-thumbs-up-alt"></span>
-              </div>
-              <h6 class="push10" style="color:#FFFFFF">Contact</h6>
-            </a>
-          </article>
-
-          <!-- Blog -->
-          <article>
-            <a href="pages/blog.html">
-              <div class="circle push15">
-                <span class="icon-microphone"></span>
-              </div>
-              <h6 class="push10" style="color:#FFFFFF">Blog</h6>
-            </a>
-          </article>
-    
-        </div> 
-    
-      </div>
-    </div>
+    </body>
+</html>
