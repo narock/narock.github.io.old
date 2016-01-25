@@ -113,6 +113,8 @@
 
                 $(".details1").hide();
                 $(".details2").hide();
+                $(".details3").hide();
+                $(".details4").hide();
 
                 $("#hide").click(function(){
                     $(".details").hide();
@@ -125,6 +127,18 @@
                 });
                 $("#show2").click(function(){
                     $(".details2").show();
+                });
+                $("#hide3").click(function(){
+                    $(".details3").hide();
+                });
+                $("#show3").click(function(){
+                    $(".details3").show();
+                });
+                $("#hide4").click(function(){
+                    $(".details4").hide();
+                });
+                $("#show4").click(function(){
+                    $(".details4").show();
                 });
             });
 
@@ -181,6 +195,64 @@
                                                 <div class="row">
                                                     <div class="col-sm-6 col-md-3">
                                                         <div class="image">
+                                                            <img alt="image" src="img/osf.png"  class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon icon-search"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>Linked Data in the Geosciences</h3>
+                                                            <a href="#" id="show">Show Details...</a>
+                                                            
+                                                            <p class="details">Semantic Technologies are becoming commonplace in the geoscience community. Within this collection of tools, techniques, and methodologies, the ontology is a basic building block. Yet, despite the interest and uptake in semantics, there still exist several challenges to consuming semantic data and reusing existing ontologies.</p>
+
+                                                            <p class="details">This <a href="http://www.esipfed.org">ESIP</a> funded testbed project will provide crucial initial feedback regarding the benefits of ODPs in geoscience data publication and consumption.</p>
+
+                                                            <p class="details">Visit our Open Science Framework 
+                                                            <a href="https://osf.io/bh63s/">page</a> for this project.
+                                                            </p>
+
+                                                            <a href="#" class="details" id="hide">Hide Details...</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/osf.png"  class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon icon-search"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>Open Climate Data Repository</h3>
+                                                            <a href="#" id="show2">Show Details...</a>
+                                                            
+                                                            <p class="details2">This project is a multi-disciplinary and multi-agency discussion on how weather and climate data is inventoried, classified, governed, and retained.  We would like to assess the current state of the art in data governance practices and standards for climate data in multiple countries with the hopes of ultimately implementing an Open Climate Data Repository (OCDR). Implicit in OCDR are metadata and data access recommendations. We are investigating making data semantically searchable and accessible, which includes usage of Linked Open Data publication and consumption where applicable.   We are interested in comments and feedback from any interested partners.</p>
+
+                                                            <p class="details2">Visit our <a href="https://osf.io/crdhg/">Open Science Framework page</a> for this project.</p>
+
+                                                            <a href="#" class="details2" id="hide2">Hide Details...</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
                                                             <img alt="image" src="img/geolink_team.jpg"  class="img-responsive">
                                                             <div class="imageoverlay">
                                                                 <i class="icon icon-search"></i>
@@ -191,15 +263,15 @@
                                                     <div class="col-sm-6 col-md-9">
                                                         <div class="meta">
                                                             <h3>GeoLink</h3>
-                                                            <a href="#" id="show">Show Details...</a>
+                                                            <a href="#" id="show3">Show Details...</a>
                                                             
-                                                            <p class="details">Dr. Narock and Marymount University are part of a consortium of collaborators funded with approx. $1.9M by the National Science Foundation through the EarthCube program. This research consortium consists of the Lamont-Doherty Earth Observatory at Columbia University, the Woods Hole Oceanographic Institution, the National Center for Ecological Analysis and Synthesis, the Department of Geography at the University of California, Santa Barbara, the DaSe Lab at Wright State University, Marymount University, the Consortium for Ocean Leadership, and the University of Maryland, Baltimore County.</p>
+                                                            <p class="details3">Dr. Narock and Marymount University are part of a consortium of collaborators funded with approx. $1.9M by the National Science Foundation through the EarthCube program. This research consortium consists of the Lamont-Doherty Earth Observatory at Columbia University, the Woods Hole Oceanographic Institution, the National Center for Ecological Analysis and Synthesis, the Department of Geography at the University of California, Santa Barbara, the DaSe Lab at Wright State University, Marymount University, the Consortium for Ocean Leadership, and the University of Maryland, Baltimore County.</p>
 
-                                                            <p class="details">The National Science Foundation's EarthCube program has set out to create integrated data infrastructures across the Geosciences. On of its key challenges is to enable and simplify scientific data publishing, discovery, access, reuse, and integration. Existing data repositories and networks must be linked, while retaining their independent missions and services to existing disciplinary communities. Cultural, conceptual, and infrastructural heterogeneities must be respected in order to maintain different perspectives, topics, granularities, and differing priorities and thus foster inclusivity in the EarthCube endeavor. At the same time, however, the diversity and heterogeneity of geoscience data presents a significant barrier to its discovery and reuse.</p>
+                                                            <p class="details3">The National Science Foundation's EarthCube program has set out to create integrated data infrastructures across the Geosciences. On of its key challenges is to enable and simplify scientific data publishing, discovery, access, reuse, and integration. Existing data repositories and networks must be linked, while retaining their independent missions and services to existing disciplinary communities. Cultural, conceptual, and infrastructural heterogeneities must be respected in order to maintain different perspectives, topics, granularities, and differing priorities and thus foster inclusivity in the EarthCube endeavor. At the same time, however, the diversity and heterogeneity of geoscience data presents a significant barrier to its discovery and reuse.</p>
 
-                                                            <p class="details">Dr. Narock and the consortium are creating GeoLink - cyberinfrastructure within the EarthCube initiative to address these challenges by 1) digital publication of geoscience data and knowledge as "Linked Open Data", combined with 2) semantic integration by way of describing data using ontology design patterns and vocabularies shared among federated repositories, and 3) establishing Linked Data and ontology design patterns as an underlying cyberinfrastructure. GeoLink will greatly enhance the capabilities for scientists to discover and interpret relevant geoscience data and knowledge. It will lower barriers to cross-repository data discovery and access, while respecting and preserving repository autonomy and heterogeneity. The cyberinfrastructure underlying the approach is extendable, sustainable, and affordable - leveraging state of the art developments in Linked Open Data and formal semantics, grounded through shared ontology design patterns. The value of the approach will finally be showcased by developing a Web portal that enables searching and browsing of integrated content from multiple repositories, serving a diverse collection of geoscience communities. The project was showcased in the <a href="http://news.sciencemag.org/scientific-community/2014/12/geoscientists-aim-magnify-specialized-web-searching">January 2015 edition</a> of Science magazine.</p>
+                                                            <p class="details3">Dr. Narock and the consortium are creating GeoLink - cyberinfrastructure within the EarthCube initiative to address these challenges by 1) digital publication of geoscience data and knowledge as "Linked Open Data", combined with 2) semantic integration by way of describing data using ontology design patterns and vocabularies shared among federated repositories, and 3) establishing Linked Data and ontology design patterns as an underlying cyberinfrastructure. GeoLink will greatly enhance the capabilities for scientists to discover and interpret relevant geoscience data and knowledge. It will lower barriers to cross-repository data discovery and access, while respecting and preserving repository autonomy and heterogeneity. The cyberinfrastructure underlying the approach is extendable, sustainable, and affordable - leveraging state of the art developments in Linked Open Data and formal semantics, grounded through shared ontology design patterns. The value of the approach will finally be showcased by developing a Web portal that enables searching and browsing of integrated content from multiple repositories, serving a diverse collection of geoscience communities. The project was showcased in the <a href="http://news.sciencemag.org/scientific-community/2014/12/geoscientists-aim-magnify-specialized-web-searching">January 2015 edition</a> of Science magazine.</p>
 
-                                                            <a href="#" class="details" id="hide">Hide Details...</a>
+                                                            <a href="#" class="details3" id="hide3">Hide Details...</a>
 
                                                         </div>
                                                     </div>
@@ -220,13 +292,13 @@
                                                     <div class="col-sm-6 col-md-9">
                                                         <div class="meta">
                                                             <h3>ResearchBit</h3>
-                                                            <a href="#" id="show2">Show Details...</a>
+                                                            <a href="#" id="show4">Show Details...</a>
 
-                                                             <p class="details2">Research networking systems use scholarly information to foster new forms of social capital thus increasing the possibility of scientific innovation and collaboration. Recently, there has been a rapid rise in research networking systems such as VIVO, Harvard Profiles, and SciVal. These systems compile expertise profiles for faculty, investigators, and scholars, from publicly available research data (e.g., grants and publications), and connect them to institution-level/enterprise systems and national research networks. By connecting groups of people or organizations that are not obviously linked to each other, and identifying individuals who are best positioned to collaborate effectively, the underlying hypothesis of a research networking system is improved scientific efficiency, productivity, and impact.</p>
+                                                             <p class="details4">Research networking systems use scholarly information to foster new forms of social capital thus increasing the possibility of scientific innovation and collaboration. Recently, there has been a rapid rise in research networking systems such as VIVO, Harvard Profiles, and SciVal. These systems compile expertise profiles for faculty, investigators, and scholars, from publicly available research data (e.g., grants and publications), and connect them to institution-level/enterprise systems and national research networks. By connecting groups of people or organizations that are not obviously linked to each other, and identifying individuals who are best positioned to collaborate effectively, the underlying hypothesis of a research networking system is improved scientific efficiency, productivity, and impact.</p>
 
-                                                             <p class="details2">While useful aggregators of publically available information, we believe the potential of research networking systems can be increased with a focus on serendipitous interactions. ResearchBit, is a system that promotes serendipitous interactions by tracking and recording, in real-time, a researcher’s interactions at conferences and meeting and suggesting suitable connections by combining her real-time data with researcher profiles. ResearchBit, will actively track the sessions, panels, and working groups that a researcher is attending at a professional society meeting. This will be achieved by embedding ultrahigh-frequency (UHF) RFID tags to conference badges of the attendees. Using a recommendation system, it will relate the current interests of the researcher, as obtained through RFID data, with past historical data of co-attendees as obtained through profiles on research networking systems and past meeting attendance, thus inferring connections that can be made in real-time. ResearchBit, is an entirely opt-in mechanism in which researchers who weigh privacy over recommendations are not tracked. ResearchBit will complement current research networking systems, but also also take the next step towards real-time recommendations and serendipitous interactions.</p>
+                                                             <p class="details4">While useful aggregators of publically available information, we believe the potential of research networking systems can be increased with a focus on serendipitous interactions. ResearchBit, is a system that promotes serendipitous interactions by tracking and recording, in real-time, a researcher’s interactions at conferences and meeting and suggesting suitable connections by combining her real-time data with researcher profiles. ResearchBit, will actively track the sessions, panels, and working groups that a researcher is attending at a professional society meeting. This will be achieved by embedding ultrahigh-frequency (UHF) RFID tags to conference badges of the attendees. Using a recommendation system, it will relate the current interests of the researcher, as obtained through RFID data, with past historical data of co-attendees as obtained through profiles on research networking systems and past meeting attendance, thus inferring connections that can be made in real-time. ResearchBit, is an entirely opt-in mechanism in which researchers who weigh privacy over recommendations are not tracked. ResearchBit will complement current research networking systems, but also also take the next step towards real-time recommendations and serendipitous interactions.</p>
 
-                                                             <a href="#" class="details2" id="hide2">Hide Details...</a>
+                                                             <a href="#" class="details4" id="hide4">Hide Details...</a>
 
 
                                                         </div>
