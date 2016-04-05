@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>AGU Scientometrics</title>
+	  <link rel="stylesheet" 
+	     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	  <style>
+          .table{
+            display:table;
+            height: 50%;
+            width: 100%;
+          }
+          .table-cell-large{
+            display:table-cell;
+            vertical-align: middle;
+            width:70%;
+          }
+          .table-cell-small{
+            display:table-cell;
+            vertical-align: middle;
+            width:30%;
+          }
+    </style>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-63291505-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+	<body>
+
+    <div class="container">
+     
+       <h2>SPARQL Queries</h2>
+       <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Query</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="agu_keyword_distribution_burstiness.txt">Keyword Distribution</td>
+            <td>Count the number of each keyword in a given year and order by descending keyword count</td>
+          </tr>
+          <tr>
+            <td><a href="agu_number_of_IN_sem_web_abstracts.txt">Number of IN Sem Web abstracts</td>
+            <td>Count the number of Semantic Web abstracts submitted to IN session in a given year</td>
+          </tr>
+          <tr>
+            <td><a href="agu_topic_group_by_query.txt">Number of Sem Web Abstracts in each section</td>
+            <td>For a given year find which sections had Semantic Web abstracts</td>
+          </tr>
+          <tr>
+            <td><a href="agu_total_semantic_abstracts.txt">Total number of Sem Web abstracts</td>
+            <td>Count the total number of Semantic Web abstracts for a given year</td>
+          </tr>
+          <tr>
+            <td><a href="agu_unique_authors.txt">Total number of unique Sem Web authors</td>
+            <td>Count the number of unique Semantic Web authors for a given year</td>
+          </tr>
+        </tbody>
+       </table>
+
+       <br/><h2>Python Code for Topic Modeling</h2>
+       <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td><a href="topics_create_corpus.py">Create Corpus</a></td>
+            <td>Read the AGU abstracts, remove stop words, and create a corpus for topic modeling</td>
+          </tr>
+          <tr>
+            <td><a href="topics_run_models.py">Run Topic Model</a></td>
+            <td>Run the topic model on the corpus we've created</td>
+          </tr>
+          <tr>
+            <td><a href="utils.py">Utilities and Setup</a></td>
+            <td>Imported python code for configuration and setup information (output directories, etc.)</td>
+          </tr>
+        </tbody>
+       </table>
+
+    </div>
+
+	</body>
+</html>

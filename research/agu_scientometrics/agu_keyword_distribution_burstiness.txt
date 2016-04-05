@@ -1,0 +1,17 @@
+prefix p1: <http://abstractsearch.agu.org/ontology#>
+prefix p2: <http://data.semanticweb.org/ns/swc/ontology#>
+prefix p3: <http://swrc.ontoware.org/ontology#>
+
+select ?keyword (count(distinct ?abstract) as ?count) where {
+
+?abstract a p1:Abstract . 
+?abstract p2:hasTopic ?keyword .
+FILTER(  
+	STR(?keyword) = "http://abstractsearch.agu.org/keywords/1924" || 
+	STR(?keyword) = "http://abstractsearch.agu.org/keywords/1938" || 
+	STR(?keyword) = "http://abstractsearch.agu.org/keywords/1958" || 
+	STR(?keyword) = "http://abstractsearch.agu.org/keywords/1966" || 
+	STR(?keyword) = "http://abstractsearch.agu.org/keywords/1968" || 
+	STR(?keyword) = "http://abstractsearch.agu.org/keywords/1970" 
+)
+} group by ?keyword order by DESC(?keyword)

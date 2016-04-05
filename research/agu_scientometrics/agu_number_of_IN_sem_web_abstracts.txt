@@ -1,0 +1,23 @@
+prefix p1: <http://abstractsearch.agu.org/ontology#>
+prefix p2: <http://data.semanticweb.org/ns/swc/ontology#>
+prefix p3: <http://swrc.ontoware.org/ontology#>
+prefix p4: <http://tw.rpi.edu/schema/>
+prefix p5: <http://xmlns.com/foaf/0.1/>
+prefix p6: <http://purl.org/dc/terms/>
+
+select count(distinct ?abstract) {
+
+?abstract a p1:Abstract . 
+?abstract p2:hasTopic ?keyword .
+?abstract p2:relatedToEvent ?session . 
+FILTER (
+        REGEX(STR(?session), "FM/IN", "i") && (  
+          STR(?keyword) = "http://abstractsearch.agu.org/keywords/1924" || 
+	  STR(?keyword) = "http://abstractsearch.agu.org/keywords/1938" || 
+	  STR(?keyword) = "http://abstractsearch.agu.org/keywords/1958" || 
+	  STR(?keyword) = "http://abstractsearch.agu.org/keywords/1966" || 
+	  STR(?keyword) = "http://abstractsearch.agu.org/keywords/1968" || 
+	  STR(?keyword) = "http://abstractsearch.agu.org/keywords/1970"
+        )
+       )
+} 
