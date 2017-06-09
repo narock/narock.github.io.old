@@ -25,10 +25,10 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody())
+    .force("charge", d3.forceManyBody().strength(-5))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json("http://narock.github.io/testing/network_map.json", function(error, graph) {
+d3.json("data/esip_network_map_2010.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")
