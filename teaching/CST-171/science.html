@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>CST-171 Project Topics</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+      .bold-italic { font-weight: bold; font-style: italic;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Math and Science</h1>
+        <p>This project uses simulation and numerical analysis to study portions of the Earth's atmosphere.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <p>The Earth's atmosphere extends from the surface of the Earth to the edge of space. Gravity holds the atmosphere to the Earth's surface. The atmosphere is complex and varies with height above the Earth's surface. This project explores the troposphere, the portion of the atmosphere closes to the surface. In the troposphere, the temperature decreases linearly with altitude and the pressure decreases exponentially. The temperature T and the pressure p are given by:<br/><br/>
+
+      T = 15.04 - .00649 * h<br/><br/>
+
+      p = 101.29 * [(T + 273.1)/288.08]^5.256<br/><br/>
+
+      where the temperature is given in degrees Celsius, the pressure in kilo-Pascals, and h is the altitude in meters. The troposphere continues from the ground (h=0) to h=11,000.</p>
+
+      <p>Your task is to create a Python program that:</p>
+
+      <ul>
+        <li>Loops over the altitudes 0 to 11,000</li> 
+        <li>At each altitude computes: the temperatue in Farenheit, the pressure in kilo-Pascals, and the altitude in miles</li>
+        <li>Determines where the Troposphere ends in miles</li>
+        <li>Given a temperature value from the user, prints out at what altitude that temperature will be observed</li>
+        <li>If a value of 'No Value' is supplied by the user then the program should skip the above step</li>
+      </ul>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
